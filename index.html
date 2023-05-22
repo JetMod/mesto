@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>сервис Mesto</title>
+    <meta name="description" content="Спринт 4" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Энвер" />
+  </head>
+  <body class="body">
+    <div class="page">
+      <!--Шапка-->
+      <header class="header">
+        <a href="#"
+          ><img class="logo" src="./images/logo.svg" alt="логотип место"
+        /></a>
+      </header>
+
+      <main class="content">
+        <!--Профиль-->
+        <section class="profile">
+          <img
+            class="profile__image"
+            src="./images/avatar.png"
+            alt="аватар профиля"
+          />
+          <div class="profile__section">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button type="button" class="profile__create popup__open"></button>
+            <p class="profile__work">Исследователь океана</p>
+          </div>
+          <button class="profile__add"></button>
+        </section>
+
+        <!--фото-->
+        <section class="elements">
+          <ul class="elements__list">
+            <li class="element">
+              <img
+                class="element__image"
+                src="./images/karachaevsk.jpg"
+                alt="Карачаевск"
+              />
+
+              <h2 class="element__name">Карачаевск</h2>
+
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
+            </li>
+
+            <li class="element">
+              <img
+                class="element__image"
+                src="./images/elbrus.png"
+                alt="Гора Эльбрус"
+              />
+
+              <h2 class="element__name">Гора Эльбрус</h2>
+
+              <button class="element__like" type="button"></button>
+            </li>
+
+            <li class="element">
+              <img
+                class="element__image"
+                src="./images/dombay.png"
+                alt="Домбай"
+              />
+
+              <h2 class="element__name">Домбай</h2>
+
+              <button class="element__like" type="button"></button>
+            </li>
+
+            <li class="element">
+              <img
+                class="element__image"
+                src="./images/elbrus.png"
+                alt="Гора Эльбрус"
+              />
+
+              <h2 class="element__name">Гора Эльбрус</h2>
+
+              <button class="element__like" type="button"></button>
+            </li>
+
+            <li class="element">
+              <img
+                class="element__image"
+                src="./images/dombay.png"
+                alt="Домбай"
+              />
+
+              <h2 class="element__name">Домбай</h2>
+
+              <button class="element__like" type="button"></button>
+            </li>
+
+            <li class="element">
+              <img
+                class="element__image"
+                src="./images/karachaevsk.jpg"
+                alt="Карачаевск"
+              />
+
+              <h2 class="element__name">Карачаево-Ч...</h2>
+
+              <button class="element__like" type="button"></button>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!--футер-->
+      <footer class="footer">
+        <p class="footer__copyright">© 2023 Гафаров Энвер</p>
+      </footer>
+    </div>
+
+    <!--popup-->
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form" name="ProfileEdit">
+          <input
+            type="text"
+            name="name"
+            class="popup__input"
+            placeholder="Введите имя"
+            id="name"
+            required
+          />
+          <input
+            type="text"
+            name="job"
+            class="popup__input"
+            placeholder="О себе"
+            id="job"
+            required
+          />
+          <button type="submit" class="popup__save">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

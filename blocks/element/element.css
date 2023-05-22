@@ -1,0 +1,16 @@
+.element {
+  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  color: #000;
+  align-items: baseline;
+  background-color: #fff;
+  min-width: 282px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}

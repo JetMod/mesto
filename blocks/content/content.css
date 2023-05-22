@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 920px) {
+  .content {
+    margin: 0;
+  }
+}

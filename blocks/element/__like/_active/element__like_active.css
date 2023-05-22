@@ -1,0 +1,8 @@
+.element__like_active {
+  background-image: url("../../../../images/like__active.svg");
+  min-height: 19px;
+  min-width: 22px;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+}
