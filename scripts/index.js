@@ -1,5 +1,5 @@
 const popup = document.querySelector(".popup");
-const buttonPopupOpen = document.querySelector(".popup__open");
+const buttonPopupOpen = document.querySelector(".popup-open");
 const buttonPopupClose = document.querySelector(".popup__close");
 const popupForm = document.querySelector(".popup__form");
 const nameInput = document.querySelector("#name");
