@@ -1,6 +1,7 @@
 # Проект: Место
+ДЕМО - https://jetmod.github.io/mesto
 
-## 3 спринт
+## 4 спринт
 ## Технологии
 
 1. JavaScript
