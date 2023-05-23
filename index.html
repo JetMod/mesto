@@ -29,10 +29,10 @@
           />
           <div class="profile__section">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button type="button" class="profile__create popup-open"></button>
+            <button type="button" class="profile__create"></button>
             <p class="profile__work">Исследователь океана</p>
           </div>
-          <button class="profile__add"></button>
+          <button type="button" class="profile__add"></button>
         </section>
 
         <!--фото-->
@@ -47,10 +47,7 @@
 
               <h2 class="element__name">Карачаевск</h2>
 
-              <button
-                class="element__like element__like_active"
-                type="button"
-              ></button>
+              <button class="element__like" type="button"></button>
             </li>
 
             <li class="element">
@@ -132,7 +129,7 @@
           <input
             type="text"
             name="name"
-            class="popup__input"
+            class="popup__input popup__input_value_name"
             placeholder="Введите имя"
             id="name"
             required
@@ -140,7 +137,7 @@
           <input
             type="text"
             name="job"
-            class="popup__input"
+            class="popup__input popup__input_value_job"
             placeholder="О себе"
             id="job"
             required

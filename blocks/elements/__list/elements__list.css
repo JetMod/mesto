@@ -12,15 +12,11 @@
 @media screen and (max-width: 920px) {
   .elements__list {
     grid-template-columns: 282px 282px;
-    grid-gap: 20px;
-    padding: 0 19px;
   }
 }
 
 @media screen and (max-width: 548px) {
   .elements__list {
     grid-template-columns: 282px;
-    grid-gap: 20px;
-    padding: 0 19px;
   }
 }

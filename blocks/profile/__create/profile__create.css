@@ -11,7 +11,7 @@
 
 .profile__create:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 920px) {
@@ -19,5 +19,6 @@
     width: 18px;
     height: 18px;
     margin-left: 10px;
+    background-size: 16px 16px;
   }
 }

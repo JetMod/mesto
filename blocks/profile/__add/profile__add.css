@@ -6,10 +6,11 @@
   background-image: url("../../../images/add.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   box-sizing: border-box;
   box-shadow: none;
   outline: none;
+  border-radius: 2px;
 }
 
 .profile__add:hover {
@@ -19,7 +20,7 @@
 
 @media screen and (max-width: 920px) {
   .profile__add {
-    margin: 36px auto 0;
+    margin: 33px auto 0;
     width: calc(100% - 299px);
   }
 }
@@ -27,5 +28,6 @@
 @media screen and (max-width: 548px) {
   .profile__add {
     width: 282px;
+    background-size: 16px 16px;
   }
 }
