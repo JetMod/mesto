@@ -2,10 +2,6 @@
 
 ДЕМО - https://jetmod.github.io/mesto
 
-## 4 спринт
-
-ДЕМО - https://jetmod.github.io/mesto
-
 ## 4,5 спринт
 
 ## Технологии
