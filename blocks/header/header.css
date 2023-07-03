@@ -1,0 +1,16 @@
+.header {
+  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  padding-bottom: 37px;
+}
+
+@media screen and (max-width: 920px) {
+  .header {
+    margin: 0;
+    padding-bottom: 27px;
+  }
+}
