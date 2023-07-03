@@ -7,7 +7,7 @@
 
 ДЕМО - https://jetmod.github.io/mesto
 
-## 5 спринт
+## 4,5 спринт
 
 >>>>>>> fc4b21c (5 sprint)
 ## Технологии
