@@ -4,11 +4,21 @@
   left: 0;
   bottom: 0;
   right: 0;
+<<<<<<< HEAD
+=======
+  display: flex;
+>>>>>>> fc4b21c (5 sprint)
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   color: #000;
+<<<<<<< HEAD
   display: none;
+=======
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+>>>>>>> fc4b21c (5 sprint)
 }

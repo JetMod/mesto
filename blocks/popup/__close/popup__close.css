@@ -12,6 +12,10 @@
   object-fit: contain;
   outline: none;
   background-size: cover;
+<<<<<<< HEAD
+=======
+  transition: opacity 0.2s;
+>>>>>>> fc4b21c (5 sprint)
 }
 
 .popup__close:hover {

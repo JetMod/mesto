@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>сервис Mesto</title>
+<<<<<<< HEAD
     <meta name="description" content="Спринт 4" />
+=======
+    <meta name="description" content="Спринт 5" />
+>>>>>>> fc4b21c (5 sprint)
     <meta name="keywords" content="html, css, javascript" />
     <meta name="author" content="Энвер" />
   </head>
@@ -36,6 +40,7 @@
         </section>
 
         <!--фото-->
+<<<<<<< HEAD
         <section class="elements">
           <ul class="elements__list">
             <li class="element">
@@ -110,6 +115,27 @@
               <button class="element__like" type="button"></button>
             </li>
           </ul>
+=======
+        <section class="cards" aria-label="фото">
+          <template id="card">
+            <div class="card">
+              <img src="#" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title">#</h2>
+                <button
+                  type="button"
+                  class="card__like"
+                  aria-label="like"
+                ></button>
+              </div>
+              <button
+                type="button"
+                class="card__delete"
+                aria-label="delete"
+              ></button>
+            </div>
+          </template>
+>>>>>>> fc4b21c (5 sprint)
         </section>
       </main>
 
@@ -117,6 +143,7 @@
       <footer class="footer">
         <p class="footer__copyright">© 2023 Гафаров Энвер</p>
       </footer>
+<<<<<<< HEAD
     </div>
 
     <!--popup-->
@@ -144,6 +171,69 @@
           />
           <button type="submit" class="popup__save">Сохранить</button>
         </form>
+=======
+
+      <!--popup для редактирования профиля-->
+      <div class="popup popup_edit-profile">
+        <div class="popup__container">
+          <button type="button" class="popup__close"></button>
+
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form" name="ProfileEdit">
+            <input
+              type="text"
+              name="name"
+              class="popup__input popup__input_value_name"
+              placeholder="Введите имя"
+              id="name"
+            />
+            <input
+              type="text"
+              name="job"
+              class="popup__input popup__input_value_job"
+              placeholder="О себе"
+              id="job"
+            />
+            <button type="submit" class="popup__save">Сохранить</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- popup для увеличенние изображения -->
+      <div class="popup popup_value_image">
+        <div class="popup__image-container">
+          <img src="#" class="popup__image" />
+          <div class="popup__image-text">#</div>
+          <button
+            class="popup__close"
+            type="button"
+            aria-label="Закрыть"
+          ></button>
+        </div>
+      </div>
+
+      <!-- popup для добавление изображения -->
+      <div class="popup popup_add">
+        <div class="popup__container">
+          <button type="button" class="popup__close"></button>
+          <h2 class="popup__title">Новое место</h2>
+          <form class="popup__form" name="ProfileEdit">
+            <input
+              type="text"
+              class="popup__input popup__input_value_title"
+              placeholder="название"
+              name="title"
+            />
+            <input
+              type="url"
+              class="popup__input popup__input_value_link"
+              placeholder="ссылка на картинку"
+              name="link"
+            />
+            <button class="popup__save" type="submit">Создать</button>
+          </form>
+        </div>
+>>>>>>> fc4b21c (5 sprint)
       </div>
     </div>
     <script src="./scripts/index.js"></script>

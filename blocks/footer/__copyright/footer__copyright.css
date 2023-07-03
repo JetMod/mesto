@@ -3,6 +3,10 @@
   line-height: 22px;
   color: #545454;
   margin: 0;
+<<<<<<< HEAD
+=======
+  padding-top: 44px;
+>>>>>>> fc4b21c (5 sprint)
 }
 
 @media screen and (max-width: 920px) {

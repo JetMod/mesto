@@ -11,6 +11,10 @@
   cursor: pointer;
   border-radius: 2px;
   margin-top: 29px;
+<<<<<<< HEAD
+=======
+  transition: opacity 0.2s;
+>>>>>>> fc4b21c (5 sprint)
 }
 
 .popup__save:hover {
