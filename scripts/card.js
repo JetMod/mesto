@@ -71,7 +71,6 @@ function renderInitialCards(cards) {
 
 // закрытие попапа добавления
 function closeCardPopup() {
-  popupAddForm.reset();
   closePopup(cardPopup);
 }
 
