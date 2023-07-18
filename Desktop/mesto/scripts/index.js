@@ -106,7 +106,7 @@ function createCard(name, link) {
   cardImg.setAttribute("alt", name);
 
   cardLikeBtn.addEventListener("click", function (event) {
-    event.target.classList.toggle("cards__like_active");
+    event.target.classList.toggle("card__like_active");
   });
 
   cardDeleteBtn.addEventListener("click", function (event) {
