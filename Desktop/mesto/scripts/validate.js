@@ -7,19 +7,19 @@ const config = {
   errorClass: "popup__input-error_active",
   hoverClass: "link",
 };
-
+//ошибка у конкретного поля
 const showInputError = (config, inputElement, errorElement, errorMessage) => {
   inputElement.classList.add(config.inputErrorClass);
   errorElement.textContent = errorMessage;
   errorElement.classList.add(config.errorClass);
 };
-
+// скрывает ошибку
 const hideInputError = (config, inputElement, errorElement) => {
   inputElement.classList.remove(config.inputErrorClass);
   errorElement.textContent = "";
   errorElement.classList.remove(config.errorClass);
 };
-
+// скрывает или показывает ошибку
 const checkInputValidity = (config, inputElement, errorElement) => {
   if (inputElement.validity.valid) {
     hideInputError(config, inputElement, errorElement);
@@ -48,7 +48,7 @@ const setEventListeners = (config, formElement, submitButtonElement) => {
     });
   });
 };
-
+// валидация форм
 const enableValidation = (config) => {
   const formList = Array.from(document.querySelectorAll(config.formSelector));
 
@@ -70,19 +70,19 @@ const hasInvalidInput = (inputList) => {
     return !inputElement.validity.valid;
   });
 };
-
+// активна кнопка
 const makeButtonActive = (config, submitButtonElement) => {
   submitButtonElement.classList.remove(config.inactiveSubmitButtonClass);
   submitButtonElement.classList.add(config.hoverClass);
   submitButtonElement.removeAttribute("disabled");
 };
-
+// неактивная кнопка
 const makeButtonInactive = (config, submitButtonElement) => {
   submitButtonElement.classList.add(config.inactiveSubmitButtonClass);
   submitButtonElement.classList.remove(config.hoverClass);
   submitButtonElement.setAttribute("disabled", true);
 };
-
+// активная или неактивная кнопка
 const toggleButtonState = (config, inputList, submitButtonElement) => {
   if (hasInvalidInput(inputList)) {
     makeButtonInactive(config, submitButtonElement);
@@ -90,7 +90,7 @@ const toggleButtonState = (config, inputList, submitButtonElement) => {
     makeButtonActive(config, submitButtonElement);
   }
 };
-
+// для отправки формы попапа
 function resetPopup(config, inputList, submitButton) {
   makeButtonInactive(config, submitButton);
   inputList.forEach((input) => {

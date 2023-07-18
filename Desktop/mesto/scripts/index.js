@@ -20,17 +20,17 @@ const imagePopup = document.querySelector(".popup_value_image");
 const imagePopupTitle = imagePopup.querySelector(".popup__image-tex");
 const imagePopupImage = imagePopup.querySelector(".popup__image");
 const imagePopupCloseButton = imagePopup.querySelector(".popup__close");
-
+// open popup
 function openPopup(popup) {
   popup.classList.add("popup_opened");
   document.addEventListener("keydown", closePopupByEsc);
 }
-
+//close popup
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
   document.removeEventListener("keydown", closePopupByEsc);
 }
-
+// open popup redact
 function openProfilePopup() {
   profileInputName.value = profileName.textContent;
   profileInputWork.value = profileWork.textContent;
@@ -41,29 +41,29 @@ function openProfilePopup() {
   );
   openPopup(profilePopup);
 }
-
+// open popup newaddcart
 function openCardPopup() {
   newCardTitle.value = "";
   newCardLink.value = "";
   resetPopup(config, [newCardTitle, newCardLink], cardPopupSubmitButton);
   openPopup(cardPopup);
 }
-
+// open image popup
 function openImagePopup(title, link) {
   imagePopupTitle.textContent = title;
   imagePopupImage.setAttribute("src", link);
   imagePopupImage.setAttribute("alt", title);
   openPopup(imagePopup);
 }
-
+//close
 function closeProfilePopup() {
   closePopup(profilePopup);
 }
-
+//close
 function closeCardPopup() {
   closePopup(cardPopup);
 }
-
+//close
 function closeImagePopup() {
   closePopup(imagePopup);
 }
@@ -73,27 +73,27 @@ function closePopupByOverlay(event) {
     closePopup(event.currentTarget);
   }
 }
-
+//закрытия попапа при нажатии на Esc
 function closePopupByEsc(event) {
   if (event.key === "Escape") {
     const popupElement = document.querySelector(".popup_opened");
     closePopup(popupElement);
   }
 }
-
+//для заполнения профиля
 function submitProfilePopup(event) {
   event.preventDefault();
   profileName.textContent = profileInputName.value;
   profileWork.textContent = profileInputWork.value;
   closePopup(profilePopup);
 }
-
+//для создания карточки
 function submitCardPopup(event) {
   event.preventDefault();
   renderCard(newCardTitle.value, newCardLink.value);
   closePopup(cardPopup);
 }
-
+// создания карточки
 function createCard(name, link) {
   const cardElement = cardTemplate.querySelector(".card").cloneNode(true);
   const cardTitle = cardElement.querySelector(".card__title");
@@ -124,7 +124,7 @@ function renderCard(name, link) {
   cardsContainer.prepend(createCard(name, link));
 }
 
-function setEventListenersOnPopups() {
+function setEventListenersPopup() {
   profileCreateButton.addEventListener("click", openProfilePopup);
   profileAddButton.addEventListener("click", openCardPopup);
 
@@ -143,9 +143,9 @@ function setEventListenersOnPopups() {
   cardPopup.addEventListener("keydown", closePopupByEsc);
   imagePopup.addEventListener("keydown", closePopupByEsc);
 }
-
+// начальн карточки
 initialCards.forEach(function (card) {
   renderCard(card.name, card.link);
 });
 
-setEventListenersOnPopups();
+setEventListenersPopup();
