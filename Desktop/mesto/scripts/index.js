@@ -17,7 +17,7 @@ const cardPopupCloseButton = cardPopup.querySelector(".popup__close");
 const cardPopupSubmitButton = newCardForm.querySelector(".popup__save");
 const cardsContainer = document.querySelector(".cards");
 const imagePopup = document.querySelector(".popup_value_image");
-const imagePopupTitle = imagePopup.querySelector(".popup__image-tex");
+const imagePopupTitle = imagePopup.querySelector(".popup__image-text");
 const imagePopupImage = imagePopup.querySelector(".popup__image");
 const imagePopupCloseButton = imagePopup.querySelector(".popup__close");
 // open popup

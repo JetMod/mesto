@@ -50,3 +50,5 @@
 @import url(../blocks/popup/__image-container/popup__image-container.css);
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__save/_disabled/popup__save_disabled.css);
+
+@import url(../blocks/link/link.css);

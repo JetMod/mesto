@@ -1,9 +1,9 @@
 const config = {
   formSelector: ".popup__form",
   inputSelector: ".popup__input",
-  submitButtonSelector: ".popup__submit",
+  submitButtonSelector: ".popup__save",
   inactiveSubmitButtonClass: "popup__save_disabled",
-  inputErrorClass: "popup__input_type_error",
+  inputErrorClass: "popup__input_error",
   errorClass: "popup__input-error_active",
   hoverClass: "link",
 };
@@ -39,7 +39,9 @@ const setEventListeners = (config, formElement, submitButtonElement) => {
   );
 
   inputList.forEach((inputElement) => {
-    const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+    const errorElement = formElement.querySelector(
+      `.${inputElement.id}-input-error`
+    );
     makeButtonInactive(config, submitButtonElement);
 
     inputElement.addEventListener("input", () => {

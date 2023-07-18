@@ -39,12 +39,12 @@
         <section class="cards" aria-label="фото">
           <template id="card">
             <div class="card">
-              <img src="#" class="card__image" />
-              <div class="card__description">
+              <img src="#" class="card__image link" />
+              <div class="card__description link">
                 <h2 class="card__title">#</h2>
                 <button
                   type="button"
-                  class="card__like"
+                  class="card__like link"
                   aria-label="like"
                 ></button>
               </div>
@@ -83,16 +83,16 @@
             <span class="popup__input-error name-input-error"></span>
             <input
               type="text"
-              name="job"
+              name="work"
               class="popup__input popup__input_value_job"
               placeholder="О себе"
-              id="job"
+              id="work"
               minlength="2"
               maxlength="200"
               required
             />
             <span class="popup__input-error work-input-error"></span>
-            <button type="submit" class="popup__save">Сохранить</button>
+            <button type="submit" class="popup__save link">Сохранить</button>
           </form>
         </div>
       </div>
@@ -100,7 +100,7 @@
       <!-- popup для добавление изображения -->
       <div class="popup popup_add">
         <div class="popup__container">
-          <button type="button" class="popup__close"></button>
+          <button type="button" class="popup__close link"></button>
           <h2 class="popup__title">Новое место</h2>
           <form class="popup__form" name="ProfileEdit" novalidate>
             <input
@@ -111,6 +111,7 @@
               minlength="2"
               maxlength="30"
               required
+              id="title"
             />
             <span class="popup__input-error title-input-error"></span>
             <input
@@ -119,9 +120,10 @@
               placeholder="ссылка на картинку"
               name="link"
               required
+              id="link"
             />
             <span class="popup__input-error link-input-error"></span>
-            <button class="popup__save" type="submit">Создать</button>
+            <button class="popup__save link" type="submit">Создать</button>
           </form>
         </div>
       </div>
@@ -131,7 +133,7 @@
           <img src="#" class="popup__image" />
           <div class="popup__image-text">#</div>
           <button
-            class="popup__close"
+            class="popup__close link"
             type="button"
             aria-label="Закрыть"
           ></button>
