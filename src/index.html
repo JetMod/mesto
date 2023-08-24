@@ -2,11 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="pages/index.css" />
+    <!--<link rel="stylesheet" href="pages/index.css" />
+    <%=require('./images/logo.svg')%>
+    <%=require('./images/avatar.png')%>
+    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>сервис Mesto</title>
-    <meta name="description" content="Спринт 4-7" />
+    <meta name="description" content="Спринт 4-8" />
     <meta name="keywords" content="html, css, javascript" />
     <meta name="author" content="Энвер" />
   </head>
@@ -15,7 +18,10 @@
       <!--Шапка-->
       <header class="header">
         <a href="#"
-          ><img class="logo" src="./images/logo.svg" alt="логотип место"
+          ><img
+            src="<%=require('./images/logo.svg')%>"
+            alt="логотип место"
+            class="logo"
         /></a>
       </header>
 
@@ -23,9 +29,9 @@
         <!--Профиль -->
         <section class="profile">
           <img
-            class="profile__image"
-            src="./images/avatar.png"
+            src="<%=require('./images/avatar.png')%>"
             alt="аватар профиля"
+            class="profile__image"
           />
           <div class="profile__section">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -140,9 +146,5 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./scripts/index.js"></script>
-    <!-- <script type="module" src="./scripts/initialCards.js"></script>
-    <script type="module" src="./scripts/Card.js"></script>
-    <script type="module" src="./scripts/FormValidator.js"></script> -->
   </body>
 </html>

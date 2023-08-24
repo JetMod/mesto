@@ -60,7 +60,7 @@ export default class Card {
 
   generateCard() {
     this._element = this._getTemplate();
-    this._titleElement = this._element.querySelector(this._titleSelector);
+    this._imageTextElement = this._element.querySelector(this._titleSelector);
     this._imageElement = this._element.querySelector(this._imageSelector);
     this._likeButtonElement = this._element.querySelector(
       this._likeButtonSelector
@@ -69,7 +69,7 @@ export default class Card {
       this._deleteButtonSelector
     );
 
-    this._titleElement.textContent = this._title;
+    this._imageTextElement.textContent = this._title;
     this._imageElement.setAttribute("src", this._image);
     this._imageElement.setAttribute("alt", this._title);
     this._setEventListeners();
