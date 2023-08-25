@@ -1,8 +1,16 @@
 import "./index.css";
 //импорт обьектов
-import { formConf } from "../components/FormValidator.js";
-import { cardConf } from "../components/Card.js";
-import { initialCards } from "../components/initialCards.js";
+import {
+  initialCards,
+  formConf,
+  cardConf,
+  profileCreateButton,
+  profileAddButton,
+  profilePopupForm,
+  profileInputName,
+  profileInputWork,
+  newCardForm,
+} from "../utils/constants.js";
 
 // импорт классов
 import Card from "../components/Card.js";
@@ -12,23 +20,15 @@ import PopupWithImage from "../components/PopupWithImage.js";
 import PopupWithForm from "../components/PopupWithForm.js";
 import UserInfo from "../components/UserInfo.js";
 
-const profileCreateButton = document.querySelector(".profile__create");
-const profileAddButton = document.querySelector(".profile__add");
-const profilePopup = document.querySelector(".popup_edit-profile");
-const profilePopupForm = profilePopup.querySelector(".popup__form");
-const profileInputName = profilePopup.querySelector(".popup__input_value_name");
-const profileInputWork = profilePopup.querySelector(".popup__input_value_job");
-const cardPopup = document.querySelector(".popup_add");
-const newCardForm = cardPopup.querySelector(".popup__form");
 const validatorProfile = new FormValidator(formConf, profilePopupForm);
 const validatorCard = new FormValidator(formConf, newCardForm);
 const popupWithImage = new PopupWithImage(".popup_value_image");
 
-const initialCardList = new Section(
+const cardList = new Section(
   {
     items: initialCards,
     renderer: (item) => {
-      initialCardList.addElements(createCard(item));
+      cardList.addItem(createCard(item));
     },
   },
   ".cards"
@@ -44,8 +44,9 @@ const profileWithForm = new PopupWithForm(
 
 const cardWithForm = new PopupWithForm(
   ".popup_add",
+
   ({ title, link }) => {
-    initialCardList.addElements(createCard({ title, link }));
+    cardList.addItem(createCard({ title, link }));
   },
   validatorCard.resetPopup.bind(validatorCard)
 );
@@ -69,7 +70,7 @@ const createCard = ({ title, link }) => {
 
 validatorProfile.enableValidation();
 validatorCard.enableValidation();
-initialCardList.renderElements();
+cardList.renderElements();
 
 // установка слушателей
 popupWithImage.setEventListeners();

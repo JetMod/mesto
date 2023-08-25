@@ -1,14 +1,3 @@
-// для валидации форм
-const formConf = {
-  formSelector: ".popup__form",
-  inputSelector: ".popup__input",
-  submitButtonSelector: ".popup__save",
-  inactiveSubmitButtonClass: "popup__save_disabled",
-  hoverClass: "link",
-  inputErrorClass: "popup__input_type_error",
-  errorClass: "popup__input-error_active",
-};
-
 export default class FormValidator {
   constructor(config, formElement) {
     this._inputSelector = config.inputSelector;
@@ -117,4 +106,3 @@ export default class FormValidator {
     this._setEventListeners();
   }
 }
-export { formConf };

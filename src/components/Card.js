@@ -1,14 +1,3 @@
-// для создания карточки
-const cardConf = {
-  templateSelector: "#card",
-  cardSelector: ".card",
-  imageSelector: ".card__image",
-  deleteButtonSelector: ".card__delete",
-  titleSelector: ".card__title",
-  likeButtonSelector: ".card__like",
-  activeLikeClass: "card__like_active",
-};
-
 export default class Card {
   constructor(data, title, image, openImagePopup) {
     this._title = title;
@@ -77,4 +66,3 @@ export default class Card {
     return this._element;
   }
 }
-export { cardConf };
