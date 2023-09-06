@@ -42,4 +42,5 @@
 .popup__save_type_confirm{margin-top:0}
 .popup{align-items:center;bottom:0;display:flex;flex-direction:column;justify-content:center;left:0;opacity:0;position:fixed;right:0;top:0;transition:visibility .3s linear,opacity .3s linear;visibility:hidden}@media screen and (max-width:600px){.popup{padding:0 19px}}
 .link{cursor:pointer;transition:opacity .2s linear}.link:hover{opacity:.8}
+.places{display:flex;justify-content:center;margin:0 auto;width:100%}
 
