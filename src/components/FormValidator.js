@@ -86,6 +86,7 @@ export default class FormValidator {
     }
   }
 
+  // сброс ошибок и кнопка отправки формы
   resetPopup() {
     this._makeButtonInactive();
     this._inputList.forEach((inputElement) => {

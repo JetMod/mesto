@@ -2,7 +2,7 @@
 
 ДЕМО - https://jetmod.github.io/mesto
 
-## 4-8 спринт
+## 4-9 спринт
 
 ## Технологии
 
@@ -21,6 +21,7 @@
 13. Модули js
 14. ООП в интерфейсах
 15. Webpack
+16. API
 
 ### Обзор
 
@@ -32,3 +33,4 @@
 - [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
 - [Ссылка на макет в Figma](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?type=design&node-id=0-1&mode=design)
 - [Ссылка на макет в Figma](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?type=design&node-id=0-1&mode=design&t=aT0eoFc9fLNq1JCS-0)
+- [Ссылка на макет в Figma](<https://www.figma.com/file/72UuwS5jGyzFY0YbWsLj7N/JavaScript.-Sprint-9-(Copy)?type=design&node-id=109-75&mode=design&t=wYjkMo9jnQjRGjeQ-0>)

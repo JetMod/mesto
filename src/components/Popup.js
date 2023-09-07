@@ -4,6 +4,13 @@ export default class Popup {
     this._handleEscClose = this._handleEscClose.bind(this);
   }
 
+  // закрыть попап на Esc
+  _handleEscClose(event) {
+    if (event.key === "Escape") {
+      this.close();
+    }
+  }
+
   // открыть попап
   open() {
     this._popupElement.classList.add("popup_opened");
@@ -16,22 +23,20 @@ export default class Popup {
     document.removeEventListener("keydown", this._handleEscClose);
   }
 
-  // закрытия попапа клавишей esc
-  _handleEscClose(event) {
-    if (event.key === "Escape") {
+  _handlePopupMouseDown(event) {
+    if (
+      event.target === event.currentTarget ||
+      event.target.classList.contains("popup__close")
+    ) {
       this.close();
     }
   }
 
-  // добавляет слушатель клика иконке закрытия попапа
+  // устанавливает слушатели событий
   setEventListeners() {
-    this._popupElement.addEventListener("mousedown", (event) => {
-      if (
-        event.target === event.currentTarget ||
-        event.target.classList.contains("popup__close")
-      ) {
-        this.close();
-      }
-    });
+    this._popupElement.addEventListener(
+      "mousedown",
+      this._handlePopupMouseDown.bind(this)
+    );
   }
 }

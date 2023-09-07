@@ -1,24 +1,23 @@
 .profile__create {
+  box-sizing: border-box;
   width: 24px;
   height: 24px;
-  background: none;
-  background-repeat: no-repeat;
+  background-image: url(../../../images/Edit-Button.svg);
+  background-size: 10px 10px;
   background-position: center;
-  background-image: url("../../../images/edit.svg");
-  margin-left: 18px;
-  border: 1px solid #fff;
-}
-
-.profile__create:hover {
-  cursor: pointer;
-  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 6px;
+  margin-right: 5px;
+  border: 1px solid white;
 }
 
 @media screen and (max-width: 920px) {
   .profile__create {
     width: 18px;
     height: 18px;
-    margin-left: 10px;
-    background-size: 16px 16px;
+    background-size: 7.5px 7.5px;
+    margin-top: 4px;
   }
 }
