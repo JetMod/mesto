@@ -1,0 +1,74 @@
+.header {
+  background-image: url(../../images/main-fon.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+  min-height: 321px;
+  max-height: 936px;
+  background-repeat: no-repeat;
+  padding-top: 72px;
+}
+
+.header__main {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+  min-height: 321px;
+  max-height: 936px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__logo {
+  width: 116px;
+  height: 116px;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-right: 120px;
+}
+
+.header__logo:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1700px) {
+  .header__logo {
+    width: 110px;
+    height: 110px;
+    margin-right: 110px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .header__logo {
+    /* width: 80px;
+    height: 80px; */
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .header__logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    padding-top: 32px;
+  }
+  .header__logo {
+    width: 40px;
+    height: 40px;
+    /* padding-right: 127px; */
+  }
+}

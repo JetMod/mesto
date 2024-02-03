@@ -1,0 +1,15 @@
+.header__menu {
+  background-color: #fff;
+  font-size: 27.927px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu :not(:last-child) {
+    display: none;
+  }
+  .header__menu.responsive {
+    position: relative;
+  }
+}

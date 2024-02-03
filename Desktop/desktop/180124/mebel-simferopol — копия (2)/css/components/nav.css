@@ -1,0 +1,300 @@
+.nav {
+  display: flex;
+
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 270px;
+}
+
+@media screen and (max-width: 1700px) {
+  .nav {
+    max-width: 1500px;
+    max-height: 110px;
+
+    margin: 0 52px 0 60px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .nav {
+    max-width: 1200px;
+    margin: 0 67px 0 105px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav {
+    max-width: 650px;
+    max-height: 40px;
+    margin: 0 50px 0 154px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .nav {
+    max-width: 270px;
+    max-height: 31px;
+    margin: 0 25px 0 25px;
+  }
+}
+
+.navbar__container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  /* flex-flow: row nowrap;
+  max-width: 1349px;
+  max-height: 51px;
+  height: 100%; */
+  align-items: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  list-style-type: none;
+  padding: 0;
+  /* margin: 0; */
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1700px) {
+  .nav__list {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .nav__list {
+    font-size: 14px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav__list {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .nav__list {
+    font-size: 6px;
+  }
+}
+
+.nav__link {
+  color: #fff;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: all 0.05s ease-in-out;
+  padding-right: 65px;
+  opacity: 1;
+  text-wrap: nowrap;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1700px) {
+  .nav__link {
+    padding-right: 47px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .nav__link {
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav__link {
+    padding-right: 33px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .nav__link {
+  }
+}
+
+.nav__phone {
+  padding: 14px 30px;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-radius: 100px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(91 66 59);
+  transition: all 0.1s ease-in-out;
+  width: 350px;
+  height: 65px;
+  font-size: 28px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__phone:hover {
+  transform: scale(1.04);
+  color: #fff;
+  box-shadow: 0 9px 9px rgb(91 66 55);
+}
+
+@media screen and (max-width: 1700px) {
+  .nav__phone {
+    width: 350px;
+    height: 65px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .nav__phone {
+    font-size: 20px;
+    width: 251px;
+    height: 46px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav__phone {
+    font-size: 20px;
+    width: 114px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .nav__phone {
+    font-size: 6px;
+    width: 84px;
+    height: 15px;
+  }
+}
+
+.nav__phone_icon {
+  max-width: 37px;
+  max-height: 37px;
+}
+
+@media screen and (max-width: 1700px) {
+  .nav__phone_icon {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .nav__phone_icon {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav__phone_icon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .nav__phone_icon {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #faf6f2;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #faf6f2;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+/* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

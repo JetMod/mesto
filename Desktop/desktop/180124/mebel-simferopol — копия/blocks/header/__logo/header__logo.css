@@ -1,0 +1,10 @@
+.header__logo {
+  max-width: 116px;
+  max-height: 116px;
+  max-width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}

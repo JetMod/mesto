@@ -1,0 +1,15 @@
+.header__icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

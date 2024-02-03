@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/stayle.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Перетяжка мебели Симферополь</title>
+    <meta name="description" content="Перетжка мебели" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Энвер" />
+  </head>
+
+  <body class="body">
+    <!--Шапка-->
+    <header class="header">
+      <!--Навигация-->
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="index.html"
+            ><img
+              class="header__logo"
+              src="./images/logo.svg"
+              alt="Логотип - Перетяжки мебели"
+          /></a>
+
+          <ul class="navbar__wrap">
+            <li>
+              <a class="navbar__list" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="navbar__list" href="project.html">Наши работы</a>
+            </li>
+            <li><a class="navbar__list" href="services.html">Услуги</a></li>
+            <li>
+              <a class="navbar__list" href="materials.html">Материалы</a>
+            </li>
+            <li>
+              <a class="navbar__list" href="contact.html">Контакты</a>
+            </li>
+          </ul>
+
+          <button class="phone" href="application.html">
+            Оставить завку
+            <img
+              class="phone__icon"
+              src="./images/phone.svg"
+              alt="иконка позвонить"
+            />
+          </button>
+          <!-- Иконка бургерменю -->
+          <div class="burger">
+            <span class="burger__span"></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- главная страница  -->
+      <h1 class="header__text">Перетяжка мебели по всему Крыму</h1>
+
+      <div class="header__block">
+        <button type="button" class="header__button">+7 (978) 540-78-76</button>
+        <p class="header__subtitle">на дому и в мастерской за 5-10 дней</p>
+      </div>
+      <p class="header__subtitle_grafik">
+        Работаем ежедневно без выходных с 9:00 до 22:00
+      </p>
+      <!-- карусель из городов -->
+      <div class="void">
+        <div class="crop">
+          <ul class="card-list" style="--count: 6">
+            <li class="cards">
+              <div class="card">
+                <p class="model-name">
+                  <img
+                    class="location__icon"
+                    src="./images/location.svg"
+                    alt="иконка локации"
+                  />
+                  Севастополь
+                </p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <p class="model-name">
+                  <img
+                    class="location__icon"
+                    src="./images/location.svg"
+                    alt="иконка локации"
+                  />
+                  Евпатория
+                </p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <p class="model-name">
+                  <img
+                    class="location__icon"
+                    src="./images/location.svg"
+                    alt="иконка локации"
+                  />
+                  Симферополь
+                </p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <p class="model-name">
+                  <img
+                    class="location__icon"
+                    src="./images/location.svg"
+                    alt="иконка локации"
+                  />
+                  Феодосия
+                </p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <p class="model-name">
+                  <img
+                    class="location__icon"
+                    src="./images/location.svg"
+                    alt="иконка локации"
+                  />
+                  Судак
+                </p>
+              </div>
+            </li>
+            <li class="cards">
+              <div class="card">
+                <p class="model-name">
+                  <img
+                    class="location__icon"
+                    src="./images/location.svg"
+                    alt="иконка локации"
+                  />
+                  Бахчисарай
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- иконки социальных сетей -->
+      <ul class="icon__container">
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img class="header__icon_line" src="images/line.svg" alt="ВК"
+          /></a>
+        </li>
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img
+              class="header__icon_image"
+              src="images/insta.svg"
+              alt="Иконка инстаграмм"
+          /></a>
+        </li>
+
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img
+              class="header__icon_image"
+              src="images/telegram.svg"
+              alt="иконка Телеграмм"
+          /></a>
+        </li>
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img class="header__icon_image" src="images/ok.svg" alt="ВК"
+          /></a>
+        </li>
+
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img
+              class="header__icon_image"
+              src="images/Vector.svg"
+              alt="Иконка инстаграмм"
+          /></a>
+        </li>
+
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img class="header__icon_image" src="images/ок.svg" alt="ВК"
+          /></a>
+        </li>
+
+        <li class="header__icons">
+          <a href="#" class="header__icons-link"
+            ><img class="header__icon_line" src="images/line.svg" alt="ТикТок"
+          /></a>
+        </li>
+      </ul>
+
+      <!-- слайдер из иконок горизонтальный -->
+      <ul class="icon__container_mobile">
+        <li class="header__icons_mobile">
+          <a href="#" class="header__icons-link_mobile"
+            ><img
+              class="header__icon_image_mobile"
+              src="images/insta.svg"
+              alt="Иконка инстаграмм"
+          /></a>
+        </li>
+
+        <li class="header__icons_mobile">
+          <a href="#" class="header__icons-link_mobile"
+            ><img
+              class="header__icon_image_mobile"
+              src="images/telegram.svg"
+              alt="иконка Телеграмм"
+          /></a>
+        </li>
+        <li class="header__icons_mobile">
+          <a href="#" class="header__icons-link_mobile"
+            ><img
+              class="header__icon_image_mobile"
+              src="images/ok.svg"
+              alt="ВК"
+          /></a>
+        </li>
+
+        <li class="header__icons_mobile">
+          <a href="#" class="header__icons-link_mobile"
+            ><img
+              class="header__icon_image_mobile"
+              src="images/Vector.svg"
+              alt="Иконка инстаграмм"
+          /></a>
+        </li>
+
+        <li class="header__icons_mobile">
+          <a href="#" class="header__icons-link_mobile"
+            ><img
+              class="header__icon_image_mobile"
+              src="images/ок.svg"
+              alt="ВК"
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- наши приемущества -->
+    <ul class="advantages">
+      <li class="advantages__block">
+        <div class="advantages__block_child">
+          <img
+            class="advantages__image"
+            src="images/check.svg"
+            alt="иконка галочки"
+          />
+          <p class="advantages__text">Гарантия</p>
+        </div>
+        <img
+          class="advantages__line advantages__line_mobile"
+          src="images/advantege__line.png"
+          alt="иконка линии"
+        />
+      </li>
+
+      <li class="advantages__block">
+        <div class="advantages__block_child">
+          <img class="advantages__image" src="images/18.svg" alt="иконка 18" />
+          <p class="advantages__text">лет опыта</p>
+        </div>
+        <img
+          class="advantages__line"
+          src="images/advantege__line.png"
+          alt="иконка линии"
+        />
+      </li>
+
+      <li class="advantages__block">
+        <div class="advantages__block_child">
+          <img
+            class="advantages__image"
+            src="images/profile.svg"
+            alt="иконка профиля"
+          />
+          <p class="advantages__text advantages__text_small">
+            Бесплатный выезд специалиста
+          </p>
+        </div>
+        <img
+          class="advantages__line advantages__line_mobile"
+          src="images/advantege__line.png"
+          alt="иконка линии"
+        />
+      </li>
+
+      <li class="advantages__block">
+        <div class="advantages__block_child">
+          <img
+            class="advantages__image"
+            src="images/avto.svg"
+            alt="иконка автомобиля"
+          />
+        </div>
+        <p
+          class="advantages__text advantages__text_small advantages__text_small-2"
+        >
+          Бесплатная перевозка
+        </p>
+      </li>
+    </ul>
+
+    <!-- блок выбора услуг -->
+    <div class="services__main">
+      <ul class="services">
+        <li class="services__card">
+          <h2 class="services__text">Перетяжка мебели</h2>
+          <img
+            class="services__img"
+            src="images/services__divan.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button">перейти</button>
+        </li>
+
+        <li class="services__card">
+          <h2 class="services__text">Сборка</h2>
+          <img
+            class="services__img"
+            src="images/services__sborka.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button">перейти</button>
+        </li>
+
+        <li class="services__card">
+          <h2 class="services__text">Ремонт на дому</h2>
+          <img
+            class="services__img"
+            src="images/services__remont.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button">перейти</button>
+        </li>
+      </ul>
+      <!-- блок выбора услуг узкий-->
+      <ul class="service">
+        <li class="service__card">
+          <h2 class="service__text">Разборка и утилизация мебели</h2>
+          <img
+            class="service__img"
+            src="images/services__razborka.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="service__button">перейти</button>
+        </li>
+
+        <li class="service__card">
+          <h2 class="service__text">Изготовление под заказ</h2>
+          <img
+            class="service__img"
+            src="images/services__izgotovl.png"
+            alt="иконка автомобиля"
+          />
+          <button class="service__button">перейти</button>
+        </li>
+
+        <li class="service__card">
+          <h2 class="service__text">Перевозка мебели</h2>
+          <img
+            class="service__img"
+            src="images/services__perevozka.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="service__button">перейти</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- мобильная версия выбора услуг -->
+    <div class="services__main_mobile">
+      <ul class="services_mobile">
+        <li class="services__card_mobile">
+          <h2 class="services__text_mobile">Разборка и утилизация мебели</h2>
+          <img
+            class="services__img_mobile"
+            src="images/services__raazborka_mobile.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button_mobile">перейти</button>
+        </li>
+
+        <li class="services__card_mobile">
+          <h2 class="services__text_mobile-2">Изготовление под заказ</h2>
+          <img
+            class="services__img_mobile"
+            src="images/services__izgotovlenie_mobile.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button services__button_mobile-2">
+            перейти
+          </button>
+        </li>
+
+        <li class="services__card_mobile">
+          <h2 class="services__text_mobile">
+            Перетяжка <br />
+            мебели
+          </h2>
+          <img
+            class="services__img_mobile"
+            src="images/services__divan_mobile.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button_mobile">перейти</button>
+        </li>
+
+        <li class="services__card_mobile">
+          <h2
+            class="services__text_mobile services__text_mobile-2 services__text_mobile-3"
+          >
+            Сборка
+          </h2>
+          <img
+            class="services__img_mobile"
+            src="images/services__sborka_mobile.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button services__button_mobile-2">
+            перейти
+          </button>
+        </li>
+
+        <li class="services__card_mobile">
+          <h2 class="services__text_mobile">
+            Ремонт на <br />
+            дому
+          </h2>
+          <img
+            class="services__img_mobile"
+            src="images/services__remont_mobile.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button_mobile">перейти</button>
+        </li>
+
+        <li class="services__card_mobile">
+          <h2 class="services__text_mobile services__text_mobile-2">
+            Перевозка <br />
+            мебели
+          </h2>
+          <img
+            class="services__img_mobile"
+            src="images/services__perevozka_mobile.jpg"
+            alt="иконка автомобиля"
+          />
+          <button class="services__button services__button_mobile-2">
+            перейти
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- блок с материалами -->
+
+    <!-- блок выбора услуг -->
+    <section class="material__main">
+      <h3 class="material__text_main">Материалы для обвивки мебели</h3>
+      <ul class="material">
+        <li class="material__card">
+          <h2 class="material__text">Велюр</h2>
+          <img
+            class="material__img"
+            src="images/velur.jpg"
+            alt="иконка автомобиля"
+          />
+        </li>
+
+        <li class="material__card">
+          <h2 class="material__text">Замша</h2>
+          <img
+            class="material__img"
+            src="images/zamch.jpg"
+            alt="иконка автомобиля"
+          />
+        </li>
+
+        <li class="material__card">
+          <h2 class="material__text">Флок</h2>
+          <img
+            class="material__img"
+            src="images/flock.jpg"
+            alt="иконка автомобиля"
+          />
+        </li>
+
+        <li class="material__card">
+          <h2 class="material__text">Шенилл</h2>
+          <img
+            class="material__img"
+            src="images/shenil.jpg"
+            alt="иконка автомобиля"
+          />
+        </li>
+
+        <li class="material__card">
+          <h2 class="material__text">Гобелен</h2>
+          <img
+            class="material__img"
+            src="images/gobelen.jpg"
+            alt="иконка автомобиля"
+          />
+        </li>
+      </ul>
+
+      <button class="material__button">Посмотреть все</button>
+    </section>
+
+    <section class="call">
+      <div class="call__block">
+        <div class="call__title">
+          <h2 class="call__text">Пригласить специалиста бесплатно</h2>
+          <p class="call__text-p">
+            Поможем с выбором материала и предложим варианты перетяжки обивки и
+            реставрации мебели на месте.
+          </p>
+        </div>
+        <img class="call__line" src="images/call__line.png" alt="" />
+
+        <div class="call__block-2">
+          <p class="call__text-phone">+7 (978) 540-78-76</p>
+          <button class="call__phone" href="application.html">
+            Оставить завку
+            <img
+              class="call__phone__icon"
+              src="./images/call__phone.svg"
+              alt="иконка позвонить"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- этапы работы -->
+    <section class="plan">
+      <h2 class="plan__text-main">Этапы работ</h2>
+      <ul class="plan__work">
+        <li class="plan__block">
+          <img class="plan__image" src="images/one.svg" alt="иконка галочки" />
+          <p class="plan__text">Формирование заявки</p>
+        </li>
+
+        <li class="plan__block">
+          <img class="plan__image" src="images/two.svg" alt="иконка галочки" />
+          <p class="plan__text">Выезд нашего мастера</p>
+        </li>
+
+        <li class="plan__block">
+          <img
+            class="plan__image"
+            src="images/three.svg"
+            alt="иконка галочки"
+          />
+          <p class="plan__text">Выбор материала для обвивки</p>
+        </li>
+
+        <li class="plan__block">
+          <img class="plan__image" src="images/four.svg" alt="иконка галочки" />
+          <p class="plan__text">Оформление договора</p>
+        </li>
+      </ul>
+      <div class="plan__line">
+        <img src="images/plan__line.jpg" alt="" class="plan__line_img" />
+        <img src="images/plan__line.jpg" alt="" class="plan__line_img" />
+      </div>
+    </section>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

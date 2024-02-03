@@ -1,0 +1,31 @@
+@import "components/header.css";
+@import "components/navbar.css";
+@import "components/advantages.css";
+@import "components/services.css";
+@import "components/material.css";
+@import "components/call.css";
+@import "components/plan.css";
+.body {
+  background-color: #fff;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif, "Inter", Arial;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+li {
+  all: unset;
+}
+
+button {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+}

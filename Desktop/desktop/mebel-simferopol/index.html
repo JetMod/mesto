@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Перетяжка мебели Симферополь</title>
+    <meta name="description" content="Перетжка мебели" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Энвер" />
+  </head>
+
+  <body class="body">
+    <!--Шапка-->
+    <header
+      id="welcome"
+      class="header"
+      style="background-image: url(images/main-fon.png)"
+    >
+      <!--Навигация-->
+      <nav id="navbar" class="navbar">
+        <div class="container">
+          <a href="index.html" class="brand">
+            <img
+              src="./images/logo.svg"
+              alt="Логотип - Перетяжки мебели"
+              class="brand__main"
+            />
+          </a>
+
+          <div id="mobile-menu" class="mobile-wrap">
+            <ul class="navbar__menu">
+              <li>
+                <a href="index.html" class="navbar__menu-link">Главная</a>
+              </li>
+              <li>
+                <a href="project.html" class="navbar__menu-link">Наши работы</a>
+              </li>
+              <li>
+                <a href="services.html" class="navbar__menu-link">Услуги</a>
+              </li>
+              <li>
+                <a href="materials.html" class="navbar__menu-link">Материалы</a>
+              </li>
+              <li>
+                <a href="contact.html" class="navbar__menu-link">Контакты</a>
+              </li>
+              <button class="navbar__menu-link phone" href="application.html">
+                Оставить завку
+                <img
+                  class="phone__icon"
+                  src="./images/phone.svg"
+                  alt="иконка позвонить"
+                />
+              </button>
+            </ul>
+
+            <!-- /.navbar__menu -->
+          </div>
+          <!-- /.mobile-wrap -->
+
+          <button
+            id="toggle_menu"
+            class="navbar__toggler"
+            data-easy-toggle="#mobile-menu"
+            data-easy-class="mobile-wrap_show"
+          >
+            <i></i>
+            <i></i>
+            <i></i>
+          </button>
+          <!-- /.navbar__toggler -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
+    <!-- /#welcome.header -->
+  </body>
+</html>
